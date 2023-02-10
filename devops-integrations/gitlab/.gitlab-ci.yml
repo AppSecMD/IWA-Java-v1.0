@@ -11,7 +11,7 @@ stages:
 
 build:
   stage: build
-  image: maven:3.8.6-eclipse-temurin-8
+  image: maven:3.8.6-openjdk-11
 
   script: 
     - echo Building project...
