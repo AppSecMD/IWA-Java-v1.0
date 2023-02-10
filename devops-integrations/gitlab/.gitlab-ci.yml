@@ -1,8 +1,8 @@
 include:
-#  - local: '/devops-integrations/gitlab/debricked-sca.yml'
-#  - local: '/devops-integrations/gitlab/fortify-sast-scancentral.yml'
-#  - local: '/devops-integrations/gitlab/fortify-dast-scancentral.yml'
-#  - local: '/devops-integrations/gitlab/fortify-sast-fod.yml'
+  #- local: '/devops-integrations/gitlab/debricked-sca.yml'
+  #- local: '/devops-integrations/gitlab/fortify-sast-scancentral.yml'
+  #- local: '/devops-integrations/gitlab/fortify-dast-scancentral.yml'
+  #- local: '/devops-integrations/gitlab/fortify-sast-fod.yml'
   
 stages:
   - build
@@ -22,8 +22,8 @@ build:
   when: manual
   artifacts:
     paths:
-#    - .debricked-maven-dependencies.tgf
-#    - /
+    #- .debricked-maven-dependencies.tgf
+    #- /
     expire_in: 3 days
     when: on_success
 
